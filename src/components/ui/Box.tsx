@@ -22,7 +22,7 @@ export const ServiceBox = (props: ServiceBoxProps) => {
 
 export const ProductBox = (props: ProductBoxProps) => {
 
-  let rating = [];
+  const rating = [];
 
   for (let i = 0; i < 5; i++) rating.push(<FaRegStar />);
 
@@ -126,7 +126,7 @@ export const ReviewBox = (props: ReviewProps) => {
   const [likeColor, setLikeColor] = useState(false);
   const [like, setLike] = useState(0);
 
-  let rating = [];
+  const rating = [];
 
   for (let i = 0; i < 5; i++) {
     if (i < (props.rating || 0)) {
