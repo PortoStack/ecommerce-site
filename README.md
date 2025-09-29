@@ -1,68 +1,68 @@
-Ecommerce Site
+# Ecommerce Site
 
 This project is a simple e-commerce website built with React, Vite, and TailwindCSS.
 It is currently under development and not yet fully responsive.
 
-Features
+# Features
 
-Product listing pages
+- Product listing pages
 
-Basic navigation structure
+- Basic navigation structure
 
-Static assets served from the public/ directory
+- Static assets served from the public/ directory
 
-Modern frontend tooling with Vite
+- Modern frontend tooling with Vite
 
-Tech Stack
+#Tech Stack
 
-React
+- React
  – UI library
 
-Vite
+- Vite
  – Build tool and dev server
 
-TailwindCSS
+- TailwindCSS
  – Utility-first CSS framework
 
-Getting Started
-Prerequisites
+# Getting Started
+## Prerequisites
 
-Node.js (v18 or later recommended)
+- Node.js (v18 or later recommended)
 
-npm or yarn
+- npm or yarn
 
-Installation
+## Installation
 
 Clone the repository and install dependencies:
-
+```
 git clone https://github.com/PortoStack/ecommerce-site.git
 cd ecommerce-site
 npm install
-
-Development
+```
+## Development
 
 Run the development server:
-
+```
 npm run dev
-
+```
 
 Open your browser and navigate to:
-
+```
 http://localhost:5173
-
-Production Build
+```
+## Production Build
 
 To build for production:
-
+```
 npm run build
-
+```
 
 To preview the production build:
-
+```
 npm run preview
+```
+# Notes
 
-Notes
+- The app is still work in progress.
 
-The app is still work in progress.
-
-Responsiveness and advanced features (cart, checkout, authentication, etc.) will be added in future updates.
+- Responsiveness and advanced features (cart, checkout, authentication, etc.) will be added in future updates.
