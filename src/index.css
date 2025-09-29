@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font size */
+  --text-20: 20rem; /* 320px */
+  --text-16: 16rem; /* 256px */
+  --text-8: 8rem; /* 128px */
+  --text-4: 4rem; /* 64px */
+  --text-2: 2rem; /* 32px */
+  --text-1\.5: 1.5rem; /* 24px */
+  --text-1: 1rem; /* 16px */
+  --text-0\.75: 12px;
+
+  /* Color */
+  --color-theme-1: #c9c9c9;
+  --color-theme-2: #ededed;
+  --color-theme-3: #6b6b6b;
+  --color-theme-4: #00000090;
+  --color-theme-5: #262626;
+
+  /*  */
+  --shadow-0240b: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.pagination-btn {
+  @apply p-2 bg-theme-3 font-medium text-white cursor-pointer duration-250 text-1.5;
+}
+
+.input-box {
+  @apply border-theme-1 border-2 p-2;
+}
