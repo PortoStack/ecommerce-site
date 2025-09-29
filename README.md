@@ -13,7 +13,7 @@ It is currently under development and not yet fully responsive.
 
 - Modern frontend tooling with Vite
 
-#Tech Stack
+# Tech Stack
 
 - React
  – UI library
