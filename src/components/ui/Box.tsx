@@ -7,7 +7,7 @@ import { BiSolidLike } from "react-icons/bi";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 import { ImageContainer } from "./Container";
-import { useState, type ChangeEvent } from "react";
+import { useState } from "react";
 
 export const ServiceBox = (props: ServiceBoxProps) => {
   return (
