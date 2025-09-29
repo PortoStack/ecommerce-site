@@ -4,9 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export const Pagination = (props: PaginationBoxProps) => {
 
-  let totalpage = Math.floor((props.length || 0) / (props.total || 0) + 1);
-
-  console.log(totalpage)
+  const totalpage = Math.floor((props.length || 0) / (props.total || 0) + 1);
 
   const handleToSection = () => {
     const element = document.getElementById("top");

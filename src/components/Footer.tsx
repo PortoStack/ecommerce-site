@@ -13,7 +13,7 @@ export const Footer = () => {
 
   return (
     <div className="relative bg-theme-5 flex items-center justify-between h-20 px-16">
-      <div className="text-white">Copyright © 2025</div>
+      <div className="text-white">&copy; {new Date().getFullYear()} PortoStack. All rights reserved.</div>
       <div className="flex gap-8">
         {socials.map((social, index) => (
           <Link to={social.to} key={index} className="text-white text-1.5">

@@ -8,6 +8,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 
 import { ImageContainer } from "./Container";
 import { useState } from "react";
+import { BASE } from "../../constants/app.config";
 
 export const ServiceBox = (props: ServiceBoxProps) => {
   return (
@@ -24,7 +25,7 @@ export const ProductBox = (props: ProductBoxProps) => {
 
   const rating = [];
 
-  for (let i = 0; i < 5; i++) rating.push(<FaRegStar />);
+  for (let i = 0; i < 5; i++) rating.push(<FaRegStar key={i} />);
 
   const handleToTop = () => {
     const element = document.getElementById("top");
@@ -61,7 +62,7 @@ export const CustomerSayBox = (props: CustomerSayBoxProps) => {
         <div>{props.desc}</div>
       </div>
       <div className="flex gap-2 items-center justify-center">
-        <img src={props.src} className="bg-theme-2 overflow-hidden w-15 h-15 rounded-full shadow-0240b" />
+        <img src={`${BASE}${props.src}`} className="bg-theme-2 overflow-hidden w-15 h-15 rounded-full shadow-0240b" />
         <div className="font-medium">{props.name}</div>
       </div>
     </div>
@@ -130,9 +131,9 @@ export const ReviewBox = (props: ReviewProps) => {
 
   for (let i = 0; i < 5; i++) {
     if (i < (props.rating || 0)) {
-      rating.push(<FaStar />)
+      rating.push(<FaStar key={i} />)
     } else {
-      rating.push(<FaRegStar />)
+      rating.push(<FaRegStar key={i} />)
     }
   }
 
@@ -144,7 +145,7 @@ export const ReviewBox = (props: ReviewProps) => {
   return (
     <div className="grid">
       <div className="flex items-center gap-2">
-        <img src={props.src} alt="Not foun account" className="bg-theme-2 overflow-hidden w-15 h-15 rounded-full shadow-0240b" />
+        <img src={`${BASE}/${props.src}`} alt="Not foun account" className="bg-theme-2 overflow-hidden w-15 h-15 rounded-full shadow-0240b" />
         <div>
           <div className="flex">{rating}</div>
           <div>{props.name}</div>

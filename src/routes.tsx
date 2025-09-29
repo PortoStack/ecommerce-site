@@ -65,7 +65,7 @@ export const AnimatedRoutes = () => {
             }
           />
           {/* Profile route */}
-          <Route path="user" element={<ProfileLayout />}>
+          <Route path="/user" element={<ProfileLayout />}>
             <Route
               path=":id"
               element={
@@ -84,7 +84,7 @@ export const AnimatedRoutes = () => {
             />
           </Route>
           {/* Product route */}
-          <Route path="product" element={<ProductLayout />}>
+          <Route path="/product" element={<ProductLayout />}>
             <Route
               path=":id"
               element={

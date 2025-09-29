@@ -7,6 +7,7 @@ import { ElementTranstion } from "../components/ui/Animation";
 import { FaPlus } from "react-icons/fa6";
 import { ReviewFormField } from "../components/ui/FormField";
 import { HiddenContainer } from "../components/ui/Container";
+import { BASE } from "../constants/app.config";
 
 export const Product = () => {
 
@@ -29,9 +30,9 @@ export const Product = () => {
   return (
     <div className="relative flex justify-center top-20">
       <div className="grid grid-cols-2 gap-x-4 p-20 w-[80vw]">
-        {/* Image boc */}
+        {/* Image box */}
         <div className="flex justify-center">
-          <img src={product?.src} className="min-w-[300px] max-w-[500px]" />
+          <img src={`${BASE}${product?.src}`} className="min-w-[300px] max-w-[500px]" />
         </div>
         {/* Details Product box */}
         <div className="flex flex-col gap-2">
@@ -73,7 +74,7 @@ export const Product = () => {
                   duration={.5}
                   delay={.1 * index}
                 >
-                  <ReviewBox {...review} />
+                  <ReviewBox key={index} {...review} />
                 </ElementTranstion>
               ))}
             </div>

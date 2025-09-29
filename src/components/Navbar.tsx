@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router";
 import { motion } from "motion/react";
 
 import { BsPerson, BsCart3 } from "react-icons/bs";
+import { BASE } from "../constants/app.config";
 
 export const Navbar = () => {
 
@@ -37,7 +38,7 @@ export const Navbar = () => {
         className="text-2"
         id="top"
       >
-        <img src="/assets/logo-dotHS.png" alt="" className="h-16" />
+        <img src={`${BASE}/assets/logo-dotHS.png`} alt="" className="h-16" />
       </div>
       {/* Options page */}
       <div

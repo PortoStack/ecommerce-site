@@ -1,10 +1,11 @@
 import { motion } from "motion/react";
 import type { HiddenContainerProps, ImageContainerProps } from "../../interfaces/component";
+import { BASE } from "../../constants/app.config";
 
 export const ImageContainer = (props: ImageContainerProps) => {
   return (
     <div className={`relative ${props.className?.container}`}>
-      <img src={props.src} alt="Not found image" className={props.className?.image} />
+      <img src={`${BASE}${props.src}`} alt="Not found image" className={props.className?.image} />
       <div className={`absolute ${props.className?.children}`}>
         {props.children}
       </div>

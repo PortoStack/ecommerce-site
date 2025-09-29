@@ -4,7 +4,7 @@ import { FaRegStar, FaStar } from "react-icons/fa6";
 export const ReviewFormField = ({ title }: { title?: string }) => {
 
   const [star, setStar] = useState(-1);
-  let rating = [];
+  const rating = [];
 
   for (let i = 0; i < 5; i++) {
     rating.push(

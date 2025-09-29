@@ -3,7 +3,7 @@ import { AnimatedRoutes } from "./routes";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ecommerce-site">
       <AnimatedRoutes />
     </Router>
   );

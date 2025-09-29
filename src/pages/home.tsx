@@ -28,7 +28,7 @@ export const Home = () => {
   const [products, setProducts] = useState<Array<ProductProps>>();
 
   useEffect(() => {
-    getProduct()
+    getProduct()  
       .then((res) => setProducts(res.slice(0, 4)))
       .catch((err) => console.error(err));
   }, []);
